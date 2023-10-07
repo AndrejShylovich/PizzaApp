@@ -1,0 +1,47 @@
+[
+    {
+      "name": "PEPPER BARBECUE CHICKEN",
+      "varients": ["small", "medium", "large"],
+      "prices": [
+        {
+          "small": 200,
+          "medium": 350,
+          "large": 400
+        }
+      ],
+      "category": "nonveg",
+      "image":
+        "https://5.imimg.com/data5/HW/SD/MY-29540739/pepper-barbecue-chicken-500x500.png",
+      "description": "Pepper Pepper Pepper"
+    },
+    {
+      "name": "Margherita",
+      "varients": ["small", "medium", "large"],
+      "prices": [
+        {
+          "small": 100,
+          "medium": 180,
+          "large": 200
+        }
+      ],
+      "category": "veg",
+      "image":
+        "https://static.toiimg.com/photo/56868564.cms",
+      "description": "Veg Pizza"
+    },
+    {
+      "name": "4 Seasons",
+      "varients": ["small", "medium", "large"],
+      "prices": [
+        {
+          "small": 180,
+          "medium": 270,
+          "large": 300
+        }
+      ],
+      "category": "nonveg",
+      "image":
+        "https://mgi-deliveryportal.s3.amazonaws.com/4%20season%20Original.jpg",
+      "description": "Winter + Spring + Summer + Autumn"
+    },
+]

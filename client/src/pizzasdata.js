@@ -89,6 +89,21 @@ const pizzas = [
       "https://5.imimg.com/data5/HW/SD/MY-29540739/pepper-barbecue-chicken-500x500.png",
     description: "Pepper Pepper Pepper",
   },
+  {
+    name: "PEPPER BARBECUE CHICKEN 8",
+    varients: ["small", "medium", "large"],
+    prices: [
+      {
+        small: 200,
+        medium: 350,
+        large: 400,
+      },
+    ],
+    category: "nonveg",
+    image:
+      "https://5.imimg.com/data5/HW/SD/MY-29540739/pepper-barbecue-chicken-500x500.png",
+    description: "Pepper Pepper Pepper",
+  },
 ];
 
 export default pizzas
