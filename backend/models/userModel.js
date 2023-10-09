@@ -1,7 +1,7 @@
 const mongoose = require('mongoose')
 
 const userSchema = new mongoose.Schema({
-    username: {
+    name: {
         type: String,
         required: true,
         unique: true
@@ -19,9 +19,14 @@ const userSchema = new mongoose.Schema({
     profileImg: {
         type: String,
         default: ""
+    },
+    isAdmin : {
+        type: Boolean,
+        require,
+        default: false
     }
 }, {timestamps: true})
 
-const userModel = mongoose.model("users", userModel);
+const userModel = mongoose.model("users", userSchema);
 
 module.exports = userModel;

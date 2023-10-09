@@ -17,8 +17,11 @@ app.use(express.urlencoded({extended: true}))
 
 //start server
 const pizzasController = require('./controllers/pizzasController')
+const userController = require('./controllers/userController')
 
 app.use('/api/pizzas', pizzasController)
+app.use('/api/users', userController)
+
 
 const port = process.env.PORT || 8000;
 
