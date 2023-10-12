@@ -1,13 +1,22 @@
 import React from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { logoutUser } from "../actions/userActions";
+import jwt_decode from "jwt-decode";
+
+function userName(currentUser) {
+  const token = localStorage.getItem('currentUser');
+  if (currentUser) {
+    const decoded = jwt_decode(token);
+    return decoded.name;
+  }
+}
+
 function Navbar() {
   const cartstate = useSelector((state) => state.cartReducer);
   const userstate = useSelector((state) => state.loginUserReducer);
   const {currentUser} = userstate;
   const dispatch = useDispatch();
-  console.log(currentUser)
-
+  
   return (
     <div>
       <nav className="navbar navbar-expand-lg shadow-lg p-3 mb-5 bg-white rounded">
@@ -31,7 +40,7 @@ function Navbar() {
             {currentUser ? (
               <div className="dropdown">
               <a style = {{color: 'black'}} className="dropdown-toggle nav-link" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                {currentUser[0].name}
+                {userName(currentUser)}
               </a>
               <div className="dropdown-menu" aria-labelledby="dropdownMenuButton">
                 <a className="dropdown-item" href="#">Orders</a>
